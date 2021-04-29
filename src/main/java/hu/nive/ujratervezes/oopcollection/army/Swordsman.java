@@ -10,10 +10,10 @@ public class Swordsman extends MilitaryUnit {
 
     @Override
     public void sufferDamage(int damage) {
-        if (blockFirst) {
+        if (this.blockFirst) {
             super.sufferDamage(damage);
         } else {
-            blockFirst = true;
+            this.blockFirst = true;
         }
     }
 }

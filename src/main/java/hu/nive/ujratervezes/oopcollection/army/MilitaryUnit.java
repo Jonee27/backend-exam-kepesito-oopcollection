@@ -18,13 +18,13 @@ public abstract class MilitaryUnit {
 
     public void sufferDamage(int damage) {
         if (this.hasArmor) {
-            hitPoints -= damage / 2;
+            this.hitPoints -= damage / 2;
         } else {
-            hitPoints -= damage;
+            this.hitPoints -= damage;
         }
     }
 
     public int getHitPoints() {
-        return hitPoints;
+        return this.hitPoints;
     }
 }
